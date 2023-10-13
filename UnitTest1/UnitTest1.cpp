@@ -55,5 +55,30 @@ namespace UnitTest1
 			setLength(input, &length);
 			Assert::AreEqual(12, length);
 		}
+
+		TEST_METHOD(GetwidthTest1)
+		{
+			int width = 7;
+			int input = 15;
+			setLength(input, &width);
+			Assert::AreEqual(15, width);
+		}
+
+		TEST_METHOD(GetwidthTest2)
+		{
+			int width = 0;
+			int input = 44;
+			setLength(input, &width);
+			Assert::AreEqual(44, width);
+		}
+		
+		TEST_METHOD(GetwidthTest3)
+		{
+			int width = 1;
+			int input = 98;
+			setLength(input, &width);
+			Assert::AreEqual(98, width);
+		}
+
 	};
 }
