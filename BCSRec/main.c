@@ -87,8 +87,6 @@ int getPerimeter(int* length, int* width) {
 	return perimeter;
 }
 
-
-
 int getArea(int *length, int *width) {
 	int area = *length * *width;
 	return area;
