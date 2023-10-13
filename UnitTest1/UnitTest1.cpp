@@ -4,6 +4,8 @@
 extern "C" int getPerimeter(int*length, int*width);
 extern "C" int getArea(int* length, int* width);
 extern "C" int setLength(int input, int* length);
+extern "C" int setWidth(int input, int* width);
+
 
 
 
@@ -32,53 +34,54 @@ namespace UnitTest1
 			Assert::AreEqual(16, result);
 		}
 
-		TEST_METHOD(GetLengthTest1)
-		{
-			int length = 0;
-			int input = 25;
-			setLength(input, &length);
-			Assert::AreEqual(25, length);
-		}
+			TEST_METHOD(GetLengthTest1)
+			{
+				int length = 0;
+				int input = 25;
+				setLength(input, &length);
+				Assert::AreEqual(25, length);
+			}
 
-		TEST_METHOD(GetLengthTest2)
-		{
-			int length = 1;
-			int input = 80;
-			setLength(input, &length);
-			Assert::AreEqual(80, length);
-		}
+			TEST_METHOD(GetLengthTest2)
+			{
+				int length = 1;
+				int input = 80;
+				setLength(input, &length);
+				Assert::AreEqual(80, length);
+			}
 
-		TEST_METHOD(GetLengthTest3)
-		{
-			int length = 6;
-			int input = 12;
-			setLength(input, &length);
-			Assert::AreEqual(12, length);
-		}
+			TEST_METHOD(GetLengthTest3)
+			{
+				int length = 6;
+				int input = 12;
+				setLength(input, &length);
+				Assert::AreEqual(12, length);
+			}
 
-		TEST_METHOD(GetwidthTest1)
-		{
-			int width = 7;
-			int input = 15;
-			setLength(input, &width);
-			Assert::AreEqual(15, width);
-		}
+			TEST_METHOD(GetwidthTest1)
+			{
+				int width = 7;
+				int input = 15;
+				setLength(input, &width);
+				Assert::AreEqual(15, width);
+			}
 
-		TEST_METHOD(GetwidthTest2)
-		{
-			int width = 0;
-			int input = 44;
-			setLength(input, &width);
-			Assert::AreEqual(44, width);
-		}
+			TEST_METHOD(GetwidthTest2)
+			{
+				int width = 0;
+				int input = 44;
+				setLength(input, &width);
+				Assert::AreEqual(44, width);
+			}
 		
-		TEST_METHOD(GetwidthTest3)
-		{
-			int width = 1;
-			int input = 98;
-			setLength(input, &width);
-			Assert::AreEqual(98, width);
-		}
+			TEST_METHOD(GetwidthTest3)
+			{
+				int width = 1;
+				int input = 98;
+				setLength(input, &width);
+				Assert::AreEqual(98, width);
+			}
 
+			\
 	};
 }
